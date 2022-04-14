@@ -1,0 +1,119 @@
+
+$primary: #5265e1;
+$secondary: #fa5959;
+$black: #000;
+$gray: #6c757d;
+
+$btn-border-radius: 0.35rem;
+$input-border-radius: .35rem;
+$input-btn-padding-y: 0;
+$link-color: $black;
+
+$border-width: 3px;
+$border-widths: (
+  5: 14px,
+);
+$border-radius: 1.5rem;
+$border-color: rgba(255, 255, 255, 0) ; 
+
+
+$nav-tabs-link-active-color: $secondary;
+$nav-tabs-link-hover-border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) $secondary;
+$nav-tabs-link-active-border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) $secondary;
+
+$card-border-color: rgba(255, 255, 255, 0);
+$card-border-radius: 0;
+
+$accordion-color: $gray;
+$accordion-bg: rgba(255, 255, 255, 0);
+$accordion-icon-color: $black;
+$accordion-icon-active-color: $secondary;
+$accordion-button-active-bg: rgba(255, 255, 255, 0);
+$accordion-button-focus-border-color: rgba(255, 255, 255, 0);
+$accordion-button-focus-box-shadow: 0;
+$accordion-button-active-color: $gray;
+$accordion-border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0); 
+$accordion-border-radius: 2px;
+
+
+
+$form-feedback-invalid-color: $secondary;
+$form-feedback-icon-invalid-color: $secondary;
+
+$nav-link-color: $gray;
+$nav-link-hover-color: $secondary;
+$nav-tabs-link-active-color: $secondary;
+$nav-tabs-link-focus-color: $secondary;
+
+$form-feedback-valid-color: $secondary;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+.btn-primary:hover {
+  background-color: $white;
+  color: $primary;
+  border: solid 2px $primary;
+}
+
+.footIcon,
+.btn-secondary,
+.footBut {
+  color: $white;
+}
+
+.footIcon:hover{
+  background-color: $white;
+  color: $secondary;
+  border: none;
+}
+
+.btn-secondary:hover,
+.btn-gray:hover {
+  background-color: $white;
+  color: $secondary;
+  border: solid 2px $secondary;
+  border-color: $secondary;
+}
+
+.footBut:hover {
+  color: $secondary;
+}
+
+.nav-tabs {
+  border-top: solid 2px rgba(255, 255, 255, 0);
+}
+
+.accordion-button:hover{
+color: $secondary;
+}
+
+
+.downCard {
+  max-width: 15rem;
+  box-shadow: 9px 3px 15px 4px #69696962;
+  transition: all .3s;
+}
+
+.downCard:hover {
+  max-width: 16rem;
+}
+
+.accordion-button{
+  border:  0;
+}
+
+.card-group {
+  > :nth-child(1) {
+    
+  }
+  > :nth-child(2) {
+    position: relative;
+    top: 4rem;
+  }
+  > :nth-child(3) {
+    position: relative;
+    top: 8rem;
+  }
+}
+

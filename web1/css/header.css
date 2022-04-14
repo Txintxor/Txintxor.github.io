@@ -1,0 +1,63 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-image: url("../img/header.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#japan {
+  position: fixed;
+  top: 0;
+  left: 26%;
+  height: 60%;
+  opacity: 0;
+  z-index:-1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2rem;
+  z-index: 4;
+}
+
+#navUl,
+#navMedia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navIl,
+.mediaLogo {
+  margin: 0 1rem;
+  color: var(--grey);
+  font-size: 1.25rem;
+  transition: all 0.3s;
+}
+
+.navIl:hover {
+  color: var(--black);
+  font-size: 1.5rem;
+}
+
+#headerTittle {
+  margin-top: 10rem;
+  background-color: var(--grey2);
+  opacity: .75;
+  text-align: center;
+  z-index: 1;
+}
+
+#tittleText {
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 2rem;
+  padding: 1rem 10rem 5rem 10rem;
+}
+

@@ -1,0 +1,58 @@
+@keyframes giraLogo {
+  from {
+    transform: rotate(0deg);
+    width: 100px;
+    height: 100px;
+  }
+
+  50% {
+    transform: rotate(360deg);
+    width: 150px;
+    height: 150px;
+  }
+
+  to {
+    transform: rotate(0deg);
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@keyframes giraIcon {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes header {
+  from {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.75;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+#navLogo:hover {
+  animation-duration: 3s;
+  animation-name: giraLogo;
+}
+
+a:hover i {
+  animation-duration: 1s;
+  animation-name: giraIcon;
+}
+
+#headerTittle:hover > #japan {
+  animation-duration: 5s;
+  animation-name: header;
+}
